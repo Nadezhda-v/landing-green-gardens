@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благоустройство и озеленение участков</title>
+
+    <link rel="stylesheet" href="style/normalize.min.css">
+    <link rel="stylesheet" href="style/scss/style.min.css">
+
+    <script src="script/script.min.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__top">
+                <div class="header__menu">
+                    <div class="header__menu-button">
+                        <div class="line line-one"></div>
+                        <div class="line line-two"></div>
+                        <div class="line line-three"></div>
+                    </div>
+                    <ul class="header__menu-section">
+                        <li><a href="#about__company">О Компании</a></li>
+                        <li><a href="#our__projects">Проекты</a></li>
+                        <li><a href="#care__garden">Уход за садом</a></li>
+                        <li><a href="#landscape">Ландшафт</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                <ul class="header__contacts">
+                    <li><a class="header__contacts header__phone" href="tel:+7(982)00-00-00">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                fill="currentColor" viewbox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>&nbsp;&nbsp;+7 (982) 00-00-00</a></li>
+                    <li><a class="header__contacts header__location" href="#">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                fill="currentColor" viewbox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;&nbsp;Санкт-Петербург</a></li>
+                </ul>
+            </div>
+            <div class="header-info">
+                <img src="image/svg/LogotupeHeader-1.svg" class="header-img">
+                <p class="header-title">Благоустройство и<br> озеленение участков</p>
+                <a href="#open__modal"><button class="header-button">Оставить заявку</button></a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container main__container">
+            <div class="main-prvilege">
+                <div class="main-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="icon"
+                        viewbox="0 0 16 16">
+                        <path
+                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="icon icon-warranty" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        <path
+                            d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="icon"
+                        viewbox="0 0 16 16">
+                        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                </div>
+
+                <div class="main-prvilege-list">
+                    <p>Опыт работы более 10 лет</p>
+                    <p>Гарантия на растения</p>
+                    <p>Лучшие питомники</p>
+                </div>
+            </div>
+
+            <div class="logotype main-logotype">
+                <div class="logotype-image">
+                    <img src="image/svg/logotype.svg">
+                </div>
+                <hr class="logotype-line">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container container-projects">
+            <div class="projects-decor">
+                <img src="image/svg/tree.svg">
+            </div>
+
+            <div class="projects-text">
+                <p id="about__company" class="projects-title-company">О КОМПАНИИ</p>
+                <p class="projects-content">Relief Image - компания по уходу за садом и ландшафтом.
+                    Более 10 лет мы занимаемся благоустройством загородных участков, также имеем порядка 60 готовых
+                    работ в Ленинградской области и Санкт-Петербурге.<br>
+                    К нам обращаются и доверяют уже более 20 постоянных клиентов за помощью по благоустройству и уходу
+                    участков.<br>
+                    <span id="more__aboutCompany">Наша компания отличается КАЧЕСТВОМ выполненных работ, ГАРАНТИЕЙ на
+                        растения, ЛУЧШИМИ питомниками для вашего участка и разработкой проекта ПОД КЛЮЧ.<br>
+                        Обратившись к нашим специалистам, вы всегда будете чувствовать, как мы с большим вниманием
+                        относимся к вашим предпочтениям. Одной из ключевых задач нашей компании является то, что бы
+                        клиент всегда оставался доволен и наслаждался выполненной работой. Если вас интерисовали именно
+                        эти критерии при подборе спициалистов, то вы попали в нужные руки!<br>
+                    </span>
+                </p>
+                <div class="arrow__down" onclick="readMore()"></div>
+            </div>
+
+            <div id="our__projects" class="title projects-title">
+                <p class="title-name">НАШИ ПРОЕКТЫ</p>
+                <img src="image/svg/logotype.svg" class="title-logotype title-logotype-projects">
+                <hr>
+            </div>
+
+            <div class="projects-info">
+                <div class="projects-sections">
+                    <div class="projects-left">
+                        <figure class="projects-box projects-box-pravdinskoe">
+                            <img src="image/Pravdinskoye-project.jpg" class="projects-image projects-image-pravdinskoe"
+                                onclick="openModal();currentSlide(3)">
+                            <figcaption class="projects-name" onclick="openModal();currentSlide(3)">Правдинское
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="projects-right">
+                        <figure class="projects-box projects-box-repino">
+                            <img src="image/Repino-project.jpg" class="projects-image projects-image-repino"
+                                onclick="openModal();currentSlide(1)">
+                            <figcaption class="projects-name" onclick="openModal();currentSlide(1)">Репино</figcaption>
+                        </figure>
+
+                        <figure class="projects-box projects-box-peterhof">
+                            <img src="image/Peterhof-project.jpg" class="projects-image projects-image-peterhof"
+                                onclick="openModal();currentSlide(2)">
+                            <figcaption class="projects-name" onclick="openModal();currentSlide(2)">Петергоф
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container container-service">
+            <div class="title service-title">
+                <p id="care__garden" class="title-name title-name-service">УХОД ЗА САДОМ</p>
+                <picture>
+                    <source srcset="image/svg/logotype.svg" media="(max-width: 960px)">
+                    <source srcset="image/svg/logotype-yellow.svg">
+                    <img srcset="image/svg/logotype-yellow.svg" class="title-logotype title-logotype-service">
+                </picture>
+                <hr>
+            </div>
+
+            <p class="service-text"> Каждый участок требует постоянный профессиональный уход, чтобы поддерживать ту
+                красоту,
+                которую планировал ландшафтный дизайнер. Это подразумевает большой комплекс работ, требующих
+                много времени. Доверьтесь нашим опытным садоводам! И мы гарантируем качество работ, здоровый сад,
+                а самое главное ваше сэкономленное время.
+            </p>
+
+            <div class="service-box">
+                <div class="service-main">
+                    <div class="service-menu-dropdown">
+                        <button class="service-button service-button-summer">ЛЕТО</button>
+                        <ul class="service-list-dropdown service-list-dropdown-summer">
+                            <li><span>Уход за цветниками (прополка, обрезка, рыхление)</span></li>
+                            <li><span>Формовочная обрезка (фигурная стрижка, стрижка изгородей, производитсяпо
+                                    мере роста)</span></li>
+                            <li><span>Стрижка газона</span></li>
+                            <li><span>Обработка газона от сорняков (первая обработка производится после первого
+                                    коса газона)</span></li>
+                            <li><span>Внесение удобрений (по газону производится 1 раз в 2 недели, по цветниками
+                                    в зависимости от растений)</span></li>
+                            <li><span>Обработка от вредителей и болезней (производится с интервалом в 10-14
+                                    дней)</span></li>
+                            <li><span>Обработка мощения от сорняков (производится 1 раз в месяц)</span></li>
+                        </ul>
+
+                        <button class="service-button service-button-season">СЕЗОННЫЕ ВЫЕЗДЫ</button>
+                        <ul class="service-list-dropdown service-list-dropdown-season">
+                            <li><span>Стоимость выезда рассчитывается индивидуально (взависиомсти от: площади
+                                    участка, удалённости, сложности проводимых работ, количества задействованных
+                                    людей)</span></li>
+                        </ul>
+
+                        <button class="service-button service-button-autumn">ОСЕНЬ</button>
+                        <ul class="service-list-dropdown service-list-dropdown-autumn">
+                            <li><span>Уход за газоном (осенняя подкормка)</span></li>
+                            <li><span>Срижка газона</span></li>
+                            <li><span>Деление растений (по мере необходимости)</span></li>
+                            <li><span>Уборка листьев</span></li>
+                            <li><span>Подготовка растений к зиме</span></li>
+                        </ul>
+
+                        <button class="service-button service-button-spring">ВЕСНА</button>
+                        <ul class="service-list-dropdown service-list-dropdown-spring">
+                            <li><span>Обрезка плодовых (производится с ноября по март, до первого
+                                    сокодвижения)</span></li>
+                            <li><span>Санитарная обрезка роз (производтся с апреля по май, удаление повреждённых
+                                    веток после зимы)</span></li>
+                            <li><span>Внесение удобрения на все посадки (производится ранней весной по
+                                    снегу)</span></li>
+                            <li><span>Обработка от вредителей и болезней (устойчивая температура от +5)</span>
+                            </li>
+                            <li><span>Уход за газоном (скарификация, аэрация, мульчирование, удобрение,
+                                    производится после полного просыхания газона)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-buttons-main">
+                        <button class="service-button-main service-button-main-summer">ЛЕТО</button>
+                        <button class="service-button-main service-button-main-season">СЕЗОННЫЕ ВЫЕЗДЫ</button>
+                        <button class="service-button-main service-button-main-autumn">ОСЕНЬ</button>
+                        <button class="service-button-main service-button-main-spring">ВЕСНА</button>
+                    </div>
+
+                    <div class="service-menu-main">
+                        <ul class="service-list service-list-summer">
+                            <li><span>Уход за цветниками (прополка, обрезка, рыхление)</span></li>
+                            <li><span>Формовочная обрезка (фигурная стрижка, стрижка изгородей, производитсяпо
+                                    мере роста)</span></li>
+                            <li><span>Стрижка газона</span></li>
+                            <li><span>Обработка газона от сорняков (первая обработка производится после первого
+                                    коса газона)</span></li>
+                            <li><span>Внесение удобрений (по газону производится 1 раз в 2 недели, по цветниками
+                                    в зависимости от растений)</span></li>
+                            <li><span>Обработка от вредителей и болезней (производится с интервалом в 10-14
+                                    дней)</span></li>
+                            <li><span>Обработка мощения от сорняков (производится 1 раз в месяц)</span></li>
+                        </ul>
+
+                        <ul class="service-list service-list-season show-list-works">
+                            <li><span>Стоимость выезда рассчитывается индивидуально (взависиомсти от: площади
+                                    участка, удалённости, сложности проводимых работ, количества задействованных
+                                    людей)</span></li>
+                        </ul>
+
+                        <ul class="service-list service-list-autumn show-list-works">
+                            <li><span>Уход за газоном (осенняя подкормка)</span></li>
+                            <li><span>Срижка газона</span></li>
+                            <li><span>Деление растений (по мере необходимости)</span></li>
+                            <li><span>Уборка листьев</span></li>
+                            <li><span>Подготовка растений к зиме</span></li>
+                        </ul>
+
+                        <ul class="service-list service-list-spring show-list-works">
+                            <li><span>Обрезка плодовых (производится с ноября по март, до первого
+                                    сокодвижения)</span></li>
+                            <li><span>Санитарная обрезка роз (производтся с апреля по май, удаление повреждённых
+                                    веток после зимы)</span></li>
+                            <li><span>Внесение удобрения на все посадки (производится ранней весной по
+                                    снегу)</span></li>
+                            <li><span>Обработка от вредителей и болезней (устойчивая температура от +5)</span>
+                            </li>
+                            <li><span>Уход за газоном (скарификация, аэрация, мульчирование, удобрение,
+                                    производится после полного просыхания газона)</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-remarks">
+                    <p class="service-remark service-remark-consultation">*Выезд и консультация специалиста
+                        оплачивается отдельно.</p>
+                    <p class="service-remark service-remark-payment">
+                        *Отдельно оплачивается: вывоз мусора, химия, удобрение, материалы для дополнительных
+                        работ ( например: земля, мульча,
+                        бордюрная лента и т.д.)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landscape">
+        <div class="container container-landscape">
+            <div id="landscape" class="landscape-content">
+                <div class="title landscape-title">
+                    <p class="title-name title-name-landscape">ЛАНДШАФТ</p>
+                    <img src="image/svg/logotype.svg" class="title-logotype title-logotype-landscape">
+                    <hr>
+                </div>
+
+                <p class="landscape-text">Ландшафтный дизайн помогает обеспечить красивый вид вокруг вашего
+                    дома.
+                    Ведь участок должен выглядеть эстетично, иметь логическую структуру и радовать глаз. Чтобы избежать
+                    лишних разочарований, необходимо грамотно продумать и разработать дизайн-проект. Обладая
+                    теоретическими
+                    знаниями и практическим опытом, мы воплотим в реальность все ваши пожелания.
+                </p>
+
+                <div class="landscape-images">
+                    <div class="landscape-image-row">
+                        <figure>
+                            <figcaption>1. Ландшафтное проектирование участка</figcaption>
+                            <img src="image/landscape/Rectangle1.jpg">
+                        </figure>
+
+                        <figure>
+                            <figcaption>2. Подготовка участка</figcaption>
+                            <img src="image/landscape/Rectangle2.jpg">
+                        </figure>
+
+                        <figure>
+                            <figcaption>3. Создание дренажной системы</figcaption>
+                            <img src="image/landscape/Rectangle3.jpg">
+                        </figure>
+                    </div>
+                    <span id="more__landscapeImage">
+                        <div class="landscape-image-row">
+                            <figure>
+                                <figcaption>4. Устройство дорожного покрытия</figcaption>
+                                <img src="image/landscape/Rectangle4.jpg">
+                            </figure>
+
+                            <figure>
+                                <figcaption>5. Альпийские горки, рокарии, альпинарии</figcaption>
+                                <img src="image/landscape/Rectangle5.jpg">
+                            </figure>
+
+                            <figure>
+                                <figcaption>6. Устройство ручьев, водоемов, каскадов</figcaption>
+                                <img src="image/landscape/Rectangle6.jpg">
+                            </figure>
+                        </div>
+
+                        <div class="landscape-image-row">
+                            <figure>
+                                <figcaption>7. Строительство, маф</figcaption>
+                                <img src="image/landscape/Rectangle7.jpg">
+                            </figure>
+
+                            <figure>
+                                <figcaption>8. Подпорные стенки</figcaption>
+                                <img src="image/landscape/Rectangle8.jpg">
+                            </figure>
+
+                            <figure>
+                                <figcaption>9. Посадка растений</figcaption>
+                                <img src="image/landscape/Rectangle9.jpg">
+                            </figure>
+                        </div>
+
+                        <div class="landscape-image-center">
+                            <figure>
+                                <figcaption>10. Устройство газона</figcaption>
+                                <img src="image/landscape/Rectangle10.jpg">
+                            </figure>
+                        </div>
+                    </span>
+                    <div class="arrow__down-image" onclick="readMoreImage()"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rewiews">
+        <div id="reviews" class="container container-rewiews">
+            <div class="title rewiews-title">
+                <img src="image/svg/logotype.svg" class="title-logotype title-logotype-rewiews">
+                <hr>
+                <p class="title-name title-name-rewiews">ОТЗЫВЫ</p>
+            </div>
+
+            <div class="rewiews-info">
+                <div class="rewiews-buttons">
+                    <button class="slider__rewiews slider__rewiews-prev" id="previous-rewiew"></button>
+                    <button class="slider__rewiews slider__rewiews-next" id="next-rewiew"></button>
+                </div>
+                <div class="rewiews-slider">
+                    <div class="rewiews-people">
+
+                        <div class="rewiews-card rewiews-card-one">
+                            <figure>
+                                <img src="image/people/image.jpg">
+                                <figcaption>Михаил</figcaption>
+                            </figure>
+                            <p>
+                                К компании relief image обратился в конце 2021 года, и летом 2022 все работы были
+                                закончены.
+                                Мы с семьей живём в пос. Правдинское озеро, хотели наш пустой и неровный участок
+                                превратить в
+                                уютный зеленый сад, с хорошим газоном, огородом и создать цветники у дома. Работой
+                                довольны,
+                                команда Надежды теперь занимается обслуживанием нашего участка.
+                            </p>
+                        </div>
+
+                        <div class="rewiews-card rewiews-card-two showing">
+                            <figure>
+                                <img src="image/people/image3.jpg">
+                                <figcaption>Наталья</figcaption>
+                            </figure>
+                            <p>
+                                В 2021 году понадобились специалисты по уходу за садом. С командой Надежды наш сад
+                                зацвёл новыми
+                                красками. В том же году мы купили дом в Репино. Хотели создать уютный уголок с зоной
+                                отдыха. И уже
+                                тогда мы понимали, кому доверить воплощение наших желаний. Работой довольны, все
+                                предпочтения были
+                                учтены. По сегодняшний день мы доверяем наш сад только специалистам relief image.
+                            </p>
+                        </div>
+
+                        <div class="rewiews-card rewiews-card-three">
+                            <figure>
+                                <img src="image/people/image2.jpg">
+                                <figcaption>Ольга</figcaption>
+                            </figure>
+                            <p>
+                                Наш участок находится в Петергофе. К Надежде обратились в 2018 году. Была необходимость
+                                в уходе
+                                за садом, растения болели, а также, было много насекомых.
+                                Работой команды довольны. Вот уже 4 года доверяем наш сад специалистам!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rewiews-button-up">
+                <svg id="Layer_1" viewbox="0 0 512 512" width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m256 0c-141.159 0-256 114.841-256 256s114.841 256 256 256 256-114.841 256-256-114.841-256-256-256zm114.789 385.569a16 16 0 0 1 -22.628 0l-92.161-92.159-92.161 92.159a16 16 0 1 1 -22.627-22.627l103.475-103.472a16 16 0 0 1 22.626 0l103.475 103.472a16 16 0 0 1 .001 22.627zm0-133.038a16 16 0 0 1 -22.628 0l-92.161-92.159-92.161 92.159a16 16 0 1 1 -22.627-22.631l103.475-103.468a16 16 0 0 1 22.626 0l103.475 103.468a16 16 0 0 1 .001 22.631z" fill="#000000" style="fill: rgb(52, 100, 33);"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__title">Контакты</p>
+            <div class="footer__contacts">
+                <div class="footer__contacts-telephone">
+                    <p>Телефон</p>
+                    <a href="tel:+7(982)00-00-00">+7 (982) 00-00-00</a>
+                </div>
+
+                <div class="footer__contacts-email">
+                    <p>Email</p>
+                    <a href="#">relief.image@mail.ru</a>
+                </div>
+
+                <div class="footer__net">
+                    <div class="footer__icon">
+                        <ul>
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                        class="footer__icon-whatsapp" viewbox="0 0 16 16">
+                                        <path
+                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                                            fill="#FFDF9E" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <svg width="26" height="26" viewbox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.9999 0C8.05863 0 -0.00012207 8.05875 -0.00012207 18C-0.00012207 27.9412 8.05863 36 17.9999 36C27.9411 36 35.9999 27.9412 35.9999 18C35.9999 8.05875 27.9411 0 17.9999 0ZM24.9224 20.3081C24.9224 20.3081 26.5143 21.8794 26.9061 22.6087C26.9174 22.6237 26.923 22.6387 26.9268 22.6462C27.0861 22.9144 27.1236 23.1225 27.0449 23.2781C26.9136 23.5369 26.4636 23.6644 26.3099 23.6756H23.4974C23.3024 23.6756 22.8936 23.625 22.3986 23.2837C22.018 23.0175 21.643 22.5806 21.2774 22.155C20.7318 21.5212 20.2593 20.9738 19.783 20.9738C19.7225 20.9736 19.6624 20.9831 19.6049 21.0019C19.2449 21.1181 18.7836 21.6319 18.7836 23.0006C18.7836 23.4281 18.4461 23.6737 18.208 23.6737H16.9199C16.4811 23.6737 14.1955 23.52 12.1705 21.3844C9.69175 18.7687 7.4605 13.5225 7.44175 13.4737C7.30113 13.1344 7.59175 12.9525 7.90863 12.9525H10.7493C11.128 12.9525 11.2518 13.1831 11.338 13.3875C11.4393 13.6256 11.8105 14.5725 12.4199 15.6375C13.408 17.3737 14.0136 18.0787 14.4993 18.0787C14.5903 18.0777 14.6797 18.0545 14.7599 18.0112C15.3936 17.6587 15.2755 15.3994 15.2474 14.9306C15.2474 14.8425 15.2455 13.92 14.9211 13.4775C14.6886 13.1569 14.293 13.035 14.053 12.99C14.1501 12.856 14.2781 12.7473 14.4261 12.6731C14.8611 12.4556 15.6449 12.4237 16.423 12.4237H16.8561C17.6999 12.435 17.9174 12.4894 18.223 12.5662C18.8418 12.7144 18.8549 13.1137 18.8005 14.4806C18.7836 14.8687 18.7668 15.3075 18.7668 15.825C18.7668 15.9375 18.7611 16.0575 18.7611 16.185C18.7424 16.8806 18.7199 17.67 19.2111 17.9944C19.2752 18.0346 19.3492 18.056 19.4249 18.0562C19.5955 18.0562 20.1093 18.0562 21.5005 15.6694C21.9296 14.9011 22.3024 14.1028 22.6161 13.2806C22.6443 13.2319 22.7268 13.0819 22.8243 13.0237C22.8962 12.9871 22.976 12.9684 23.0568 12.9694H26.3961C26.7599 12.9694 27.0093 13.0237 27.0561 13.1644C27.1386 13.3875 27.0411 14.0681 25.5168 16.1325L24.8361 17.0306C23.4543 18.8419 23.4543 18.9338 24.9224 20.3081Z"
+                                            fill="#FFDF9E" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <svg width="26" height="26" viewbox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M35.9999 18C35.9999 22.7739 34.1035 27.3523 30.7278 30.7279C27.3521 34.1036 22.7738 36 17.9999 36C13.226 36 8.64761 34.1036 5.27196 30.7279C1.8963 27.3523 -0.00012207 22.7739 -0.00012207 18C-0.00012207 13.2261 1.8963 8.64773 5.27196 5.27208C8.64761 1.89642 13.226 0 17.9999 0C22.7738 0 27.3521 1.89642 30.7278 5.27208C34.1035 8.64773 35.9999 13.2261 35.9999 18ZM18.6456 13.2885C16.8951 14.0175 13.3941 15.525 8.14713 17.811C7.29663 18.1485 6.84888 18.4815 6.80838 18.8055C6.74088 19.3522 7.42713 19.5683 8.36088 19.863L8.75463 19.9868C9.67263 20.286 10.9101 20.6348 11.5514 20.6483C12.1364 20.6618 12.7866 20.4233 13.5044 19.9283C18.4071 16.6185 20.9384 14.9467 21.0959 14.9107C21.2084 14.8837 21.3659 14.8523 21.4694 14.9468C21.5751 15.039 21.5639 15.2168 21.5526 15.264C21.4851 15.5542 18.7919 18.0562 17.3991 19.3522C16.9649 19.7572 16.6566 20.043 16.5936 20.1082C16.4549 20.25 16.3139 20.3895 16.1706 20.5268C15.3156 21.3503 14.6766 21.9668 16.2044 22.9748C16.9401 23.4608 17.5296 23.859 18.1169 24.2595C18.7559 24.696 19.3949 25.1303 20.2229 25.6748C20.4321 25.8098 20.6346 25.956 20.8304 26.0955C21.5751 26.6265 22.2479 27.1035 23.0736 27.027C23.5551 26.982 24.0524 26.532 24.3044 25.182C24.9006 21.9938 26.0729 15.0885 26.3429 12.2423C26.3594 12.0056 26.3495 11.7679 26.3136 11.5335C26.2924 11.3443 26.2009 11.17 26.0571 11.0452C25.8524 10.9039 25.6083 10.8307 25.3596 10.836C24.6846 10.8472 23.6429 11.2095 18.6456 13.2885Z"
+                                            fill="#FFDF9E" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__location" href="#">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                            viewbox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>&nbsp;&nbsp;Санкт-Петербург
+                    </a>
+                </div>
+            </div>
+            <div class="footer__image">
+                <img src="image/svg/grass.svg">
+            </div>
+        </div>
+    </footer>
+
+    <div id="open__modal" class="modal__dialog">
+        <div class="modal__content">
+            <a href="#close" title="Close" class="modal__dialog-close">X</a>
+            <div class="modal__content-all">
+                <div class="modal__content-left">
+                    <img src="image/svg/LogotupeHeader-1.svg" class="modal__dialog-image">
+                </div>
+                <div class="modal__content-right">
+                    <p class="modal__dialog-header">Получить консультацию специалиста</p>
+                    <form id="form" name="form" class="modal__dialog-form">
+                        <input type="name" id="name" data-reg="^[а-яА-ЯёЁa]*$" placeholder="Укажите ваше имя:"
+                            class="modal__input modal__input-name" required />
+                        <input type="telephone" id="telephone"
+                            data-reg="^(\+7|7|8)?[\s\-]?\(?[8|9][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                            placeholder="Укажите ваш телефон:" class="modal__input modal__input-telephone" required />
+                        <div class="checkbox">
+                            <input id="checkbox" type="checkbox" class="modal__input modal__input-checkbox" checked
+                                required />
+                            <label class="checkbox__label" for="checkbox">Согласен с &nbsp;
+                                <a href="#" class="modal__dialog-link">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        <button disabled id="submit" name="button" class="modal__dialog-button"
+                            type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalSlider" class="modal__slider">
+        <div class="modal__content-slider">
+            <span class="modal__slider-close" onclick="closeModal()">×</span>
+            <a class="prev-outside-slide" onclick="plusSlides(-1)">❮</a>
+            <a class="next-outside-slide" onclick="plusSlides(1)">❯</a>
+            <div class="modal__slider-name">
+                <p id="sliderNameRepino" class="slider__name slider__name-repino">РЕПИНО</p>
+                <p id="sliderNamePetrgof" class="slider__name slider__name-petrgof">ПЕТЕРГОФ</p>
+                <p id="sliderNameRravdinskoe" class="slider__name slider__name-pravdinskoe">ПРАВДИНСКОЕ</p>
+                <img src="image/svg/logotype-yellow.svg" class="logotype-tree">
+            </div>
+            <div class="content__foto">
+                <div class="content__images">
+                    <div class="content__project">
+                        <div class="content__main content__main-repino">
+                            <div class="slides slides-repino">
+                                <img src="image/projects/repino/repino1.jpg">
+                            </div>
+
+                            <div class="slides slides-repino">
+                                <img src="image/projects/repino/repino2.jpg">
+                            </div>
+
+                            <div class="slides slides-repino">
+                                <img src="image/projects/repino/repino3.jpg">
+                            </div>
+
+                            <div class="slides slides-repino">
+                                <img src="image/projects/repino/repino4.jpg">
+                            </div>
+                        </div>
+
+                        <div class="content__main content__main-petergof">
+                            <div class="slides slides-petergof">
+                                <img src="image/projects/petergof/petergof1.jpg">
+                            </div>
+
+                            <div class="slides slides-petergof">
+                                <img src="image/projects/petergof/petergof2.jpg">
+                            </div>
+
+                            <div class="slides slides-petergof">
+                                <img src="image/projects/petergof/petergof3.jpg">
+                            </div>
+
+                            <div class="slides slides-petergof">
+                                <img src="image/projects/petergof/petergof4.jpg">
+                            </div>
+                        </div>
+
+                        <div class="content__main content__main-pravdinskoe">
+                            <div class="slides slides-pravdinskoe">
+                                <img src="image/projects/pravdinskoe/pravdinskoe1.jpg">
+                            </div>
+
+                            <div class="slides slides-pravdinskoe">
+                                <img src="image/projects/pravdinskoe/pravdinskoe2.jpg">
+                            </div>
+
+                            <div class="slides slides-pravdinskoe">
+                                <img src="image/projects/pravdinskoe/pravdinskoe3.jpg">
+                            </div>
+
+                            <div class="slides slides-pravdinskoe">
+                                <img src="image/projects/pravdinskoe/pravdinskoe4.jpg">
+                            </div>
+                        </div>
+                        <div class="prev-next-inside-control">
+                            <a class="prev-inside-slide" onclick="plusOutSlides(1)">❮</a>
+                            <a class="next-inside-slide" onclick="plusOutSlides(-1)">❯</a>
+                        </div>
+                    </div>
+
+                    <div class="images__down">
+                        <div class="content__images-down content__images-down-repino">
+                            <div class="row row-repino">
+                                <img class="image__work image__work-repino" src="image/projects/repino/repino2.jpg"
+                                    onclick="currentOutSlide(2)">
+                            </div>
+                            <div class="row row-repino">
+                                <img class="image__work image__work-repino" src="image/projects/repino/repino3.jpg"
+                                    onclick="currentOutSlide(3)">
+                            </div>
+                            <div class="row row-repino">
+                                <img class="image__work image__work-repino" src="image/projects/repino/repino4.jpg"
+                                    onclick="currentOutSlide(4)">
+                            </div>
+                        </div>
+
+                        <div class="content__images-down content__images-down-petergof">
+                            <div class="row row-petergof">
+                                <img class="image__work image__work-petergof"
+                                    src="image/projects/petergof/petergof2.jpg" onclick="currentOutSlide(2)">
+                            </div>
+                            <div class="row row-petergof">
+                                <img class="image__work image__work-petergof"
+                                    src="image/projects/petergof/petergof3.jpg" onclick="currentOutSlide(3)">
+                            </div>
+                            <div class="row row-petergof">
+                                <img class="image__work image__work-petergof"
+                                    src="image/projects/petergof/petergof4.jpg" onclick="currentOutSlide(4)">
+                            </div>
+                        </div>
+
+                        <div class="content__images-down content__images-down-pravdinskoe">
+                            <div class="row row-pravdinskoe">
+                                <img class="image__work image__work-pravdinskoe"
+                                    src="image/projects/pravdinskoe/pravdinskoe2.jpg" onclick="currentOutSlide(2)">
+                            </div>
+                            <div class="row row-pravdinskoe">
+                                <img class="image__work image__work-pravdinskoe"
+                                    src="image/projects/pravdinskoe/pravdinskoe3.jpg" onclick="currentOutSlide(3)">
+                            </div>
+                            <div class="row row-pravdinskoe">
+                                <img class="image__work image__work-pravdinskoe"
+                                    src="image/projects/pravdinskoe/pravdinskoe4.jpg" onclick="currentOutSlide(4)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__list content__list-repino">
+                    <ul class="list__works-repino">
+                        <li><span>Ландшафтное проектирование участка</span></li>
+                        <li><span>Планировка территории на плоскости</span></li>
+                        <li><span>Создание дренажной системы</span></li>
+                        <li><span>Устройство дорожного покрытия</span></li>
+                        <li><span>Устройство рокария</span></li>
+                        <li><span>Посадка цветника и живой изгороди</span></li>
+                    </ul>
+                    <p>Сумма: 400 000 руб.</p>
+                </div>
+
+                <div class="content__list content__list-petergof">
+                    <ul class="list__works-petergof">
+                        <li><span>Обустройство и укрепление дренажной канавы</span></li>
+                        <li><span>Посадка растений</span></li>
+                        <li><span>Укладка рулонного газона</span></li>
+                    </ul>
+                    <p>Сумма: 185 000 руб.</p>
+                </div>
+
+                <div class="content__list content__list-pravdinskoe">
+                    <ul class="list__works-pravdinskoe">
+                        <li><span>Черновая планировка и уборка мусора</span></li>
+                        <li><span>Планировка территории на плоскости</span></li>
+                        <li><span>Устройство рокария</span></li>
+                        <li><span>Посадка плодовых и ягодных деревьев и кустарников</span></li>
+                        <li><span>Укладка рулонного газона</span></li>
+                        <li><span>Устройство экопарковки</span></li>
+                        <li><span>Установка грядок и теплицы</span></li>
+                    </ul>
+                    <p>Сумма: 800 000 руб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

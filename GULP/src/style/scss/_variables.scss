@@ -1,0 +1,70 @@
+$font-family-merriweather: 'Merriweather';
+$font-family-roboto: 'Roboto';
+
+$primary-background-image-header: url(../../image/head.jpg);
+$secondary-background-image-header: url(../../image/head320.jpg);
+$primary-background-image-body: url(../../image/body-fon.jpg);
+
+$font-size-header-title: 42px;
+$font-size-header-button: 24px;
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+
+$color-yellow: #FFDF9E;
+$color-white: #FFFFFF;
+$color-green: #34642C;
+$color-orange: #FF7E35;
+$color-black: #000000;
+$color-brown: #5A554D;
+$color-background: #504B47;
+$color-gray: #999;
+
+$border-button: 2px solid $color-orange;
+
+$primary-border-radius: 5px;
+
+@mixin font($family, $weight, $size) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+%for-hr-title {
+    height: 1px;
+    color: $color-green;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 29%;
+}
+
+%for-arrow {
+    width: 20px;
+    height: 20px;
+    display: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+%style-service-button {
+    @include font($font-family-roboto, 400, $font-size-large);
+    width: 318px;
+    height: 64px;
+    background: $color-white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: $primary-border-radius;
+    line-height: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+%arrow-body-slider {
+    cursor: pointer;
+    color: $color-yellow;
+    padding: 16px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
+}
