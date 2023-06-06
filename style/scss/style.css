@@ -147,6 +147,7 @@
 
 .modal__dialog-button {
   max-width: 200px;
+  cursor: pointer;
 }
 .modal__dialog-button:hover {
   background: #FFDF9E;
@@ -1429,7 +1430,6 @@ a {
   }
   .header__container {
     background-image: url(../../image/head320.jpg);
-    height: 80vh;
   }
   .header__location {
     margin-top: 16px;
