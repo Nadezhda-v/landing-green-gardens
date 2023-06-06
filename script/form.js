@@ -1,10 +1,8 @@
 window.addEventListener('load', () => {
 
     const form = document.forms['form'];
-
     const inputArr = Array.from(form);
     const validInputArr = [];
-
 
     inputArr.forEach((el) => {
         if (el.hasAttribute('data-reg')) {
@@ -17,24 +15,6 @@ window.addEventListener('load', () => {
             validInputArr.push(el);
         }
     })
-
-
-    form.addEventListener('input', inputHandler);
-
-    function inputHandler({ target }) {
-        if (target.hasAttribute('data-reg')) {
-            handlInputWithData(target)
-        }
-
-        if (target.getAttribute('type') === 'telephone') {
-            maskPhone('.modal__input-telephone')
-            handlInputWithData(target)
-        }
-
-        if (target.getAttribute('type') === 'checkbox') {
-            handlInputCheckbox(target)
-        }
-    }
 
     const button = document.querySelector('#submit');
 
@@ -59,7 +39,7 @@ window.addEventListener('load', () => {
         const inputValue = element.value;
         const inputReg = element.getAttribute('data-reg');
         const reg = new RegExp(inputReg);
-        console.log(inputValue)
+
         if (reg.test(inputValue) && inputValue.length != 0) {
             element.style.boxShadow = 'none';
             element.setAttribute('is-valid', '1');
@@ -72,7 +52,7 @@ window.addEventListener('load', () => {
     };
 
     function maskPhone(selector, masked = '+7 (___) ___-__-__') {
-        const elems = document.querySelectorAll(selector);
+        const elem = document.querySelector(selector);
 
         function mask(event) {
             const keyCode = event.keyCode;
@@ -95,16 +75,11 @@ window.addEventListener('load', () => {
             if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
                 this.value = newValue;
             }
-            if (event.type === "blur" && this.value.length < 5) {
-                this.value = "";
-            }
         }
 
-        for (const elem of elems) {
-            elem.addEventListener("input", mask);
-            elem.addEventListener("focus", mask);
-            elem.addEventListener("blur", mask);
-        }
+        elem.addEventListener('focus', mask);
+        elem.addEventListener('input', mask);
+        elem.addEventListener('keydown', mask);
     }
 
     function handlInputCheckbox(element) {
@@ -123,7 +98,23 @@ window.addEventListener('load', () => {
                 unlockButton();
             }
         }
+    }
 
+    form.addEventListener('input', inputHandler);
+    const inputTelephone = document.querySelector('.modal__input-telephone');
+
+    inputTelephone.addEventListener('focus', function() {
+        maskPhone('.modal__input-telephone');
+    })
+
+    function inputHandler({ target }) {
+        if (target.hasAttribute('data-reg')) {
+            handlInputWithData(target);
+        }
+
+        if (target.getAttribute('type') === 'checkbox') {
+            handlInputCheckbox(target);
+        }
     }
 
     const modalContentAll = document.querySelector('.modal__content-all');
@@ -138,8 +129,7 @@ window.addEventListener('load', () => {
         feedBack.className = 'feedback-text';
         feedBack.textContent = 'Ваша заявка принята! В ближайшее время с вами свяжутся для уточнения деталей'
         modalDialogClose.after(feedBack);
-
-    });
+    })
 
     headerButton.addEventListener('click', function (event) {
         modalDialog.style.display = 'block';
@@ -161,9 +151,12 @@ window.addEventListener('load', () => {
         if (event.target == modalDialog) {
             modalDialog.style.display = 'none';
             formReset();
+            inputArr.forEach((el) => {
+                el.style.boxShadow = 'none';
+            })
         }
     }
-
 })
+
 
 
